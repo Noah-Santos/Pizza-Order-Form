@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta name="author" content="Noah Santos">
+    <meta name="description" content="Testing code from notes">
+    <meta property="og:image" content="URL to image">
+    <meta property="og:description" content="Form to order pizza">
+    <meta property="og:title" content="Odering Pizza">
+    <meta charset="ISO-8859-1">
+    <link rel="icon" href="./pizza.png" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza Order Form</title>
 </head>
 <body>
-    <script src="./index.js">
-        function custom() {
-            document.getElementByID("custom").disabled = false;
-            document.getElementByID("pre-made").disabled = true;
-        }
-        function preMade() {
-            document.getElementByID("pre-made").diabled = false;
-            document.getElementByID("custom").disabled = true;
-        }
-    </script>
+    <script src="./index.js"></script>
     <center>
         <h1>Bio Petty Pizza</h1>
     </center>
@@ -104,18 +101,15 @@
                 </li>
             </ul>
         </fieldset>
+        </form>
 
-        <fieldset>
-            <legend>Pizza Creation</legend>
-            <ul>
-                <li>
-                    <p>Do you want a custom pizza or a pre-made pizza type?</p>
-                </li>
-            </ul>
-            <button type="button" onclick=custom()>Custom</button>
-            <button type="button" conclick=premade()>Pre-Made</button>
-        </fieldset>
+        <hr>
+        <p>Do you want a custom pizza or a pre-made pizza type?</p>
+        <button type="button" onclick=custom()>Custom</button>
+        <button type="button" onclick=pre()>Pre-Made</button>
+        <hr>
 
+        <form>
         <fieldset id="custom">
             <legend>Pizza Toppings</legend>
             <ul>
@@ -182,8 +176,8 @@
             </ul>
         </fieldset>
 
-        <fieldset id="custom">
-            <legend>Type of Sause</legend>
+        <fieldset id="custom2">
+            <legend>Type of Sauce</legend>
             <ul>
                 <li>
                     <input type="radio" id="tomato" name="sauce">
@@ -204,7 +198,86 @@
             </ul>
         </fieldset>
 
-        <fieldset id="custom">
+        <fieldset id="pre-made">
+            <legend>Pre-Made Pizza Types</legend>
+            <ul>
+                <li>
+                    <input type="radio" name="type" id="cheese">
+                    <label for="cheese">Cheese Pizza</label>
+                    <p>
+                        <button class="addMore" title="Cheese and tomato sauce on dough.">Hover for info  Cheese Pizza</button>
+                    </p>
+                    <img src="Cheese.png" alt="pepperoni pizza" width="75px" height="75px">
+                </li>
+                <li>
+                    <input type="radio" name="type" id="veggie">
+                    <label for="veggie">Veggie Pizza</label>
+                    <p>
+                        <button class="addMore" title="Tomatos, mushrooms, black olives, spinach,  and basil with tomato sauce on dough.">Hover for info on Veggie Pizza</button>
+                    </p>
+                    <img src="Veggie.png" alt="pepperoni pizza" width="75px" height="75px">
+                </li>
+                <li>
+                    <input type="radio" name="type" id="pepperoni">
+                    <label for="pepperoni">Pepperoni Pizza</label>
+                    <p>
+                        <button class="addMore" title="Pepperoni and tomato sauce on dough.">Hover for info on Pepperoni Pizza</button>
+                    </p>
+                    <img src="Pepperoni.png" alt="pepperoni pizza" width="75px" height="75px">
+                </li>
+                <li>
+                    <input type="radio" name="type" id="meat">
+                    <label for="meat">Meat Lovers</label>
+                    <p>
+                        <button class="addMore" title="Pepperoni, beef, and sausage with tomato sauce on dough.">Hover for info on Meat Lovers</button>
+                    </p>
+                    <img src="Meat.png" alt="pepperoni pizza" width="75px" height="75px">
+                </li>
+                <li>
+                    <input type="radio" name="type" id="margherita">
+                    <label for="margherita">Margherita Pizza</label>
+                    <p>
+                        <button class="addMore" title="Basil, tomatoes, and mozzarella with tomato sauce on dough.">Hover for info on Margherita Pizza</button>
+                    </p>
+                    <img src="Margherita.png" alt="pepperoni pizza" width="75px" height="75px">
+                </li>
+                <li>
+                    <input type="radio" name="type" id="bbq_chicken">
+                    <label for="bbq_chicken">Barbecue Chicken Pizza</label>
+                    <p>
+                        <button class="addMore" title="Chicken and BBQ sauce on dough.">Hover for info on BBQ Chicken Pizza</button>
+                    </p>
+                    <img src="BBQ Chicken.png" alt="pepperoni pizza" width="75px" height="75px">
+                </li>
+                <li>
+                    <input type="radio" name="type" id="hawaiian">
+                    <label for="hawaiian">Hawaiian Pizza</label>
+                    <p>
+                        <button class="addMore" title="Pineapple and ham with BBQ sauce on dough.">Hover for info on Hawaiian Pizza</button>
+                    </p>
+                    <img src="Hawaiian.png" alt="pepperoni pizza" width="75px" height="75px">
+                </li>
+                <li>
+                    <input type="radio" name="type" id="supreme">
+                    <label for="supreme">Supreme Pizza</label>
+                    <p>
+                        <button class="addMore" title="Pepperoni, sausage, meatballs, mushrooms, green bell peppers, and onions with tomato sauce on dough.">Hover for info on Supreme Pizza</button>
+                    </p>
+                    <img src="Supreme.png" alt="pepperoni pizza" width="75px" height="75px">
+                </li>
+                <li>
+                    <input type="radio" name="type" id="works">
+                    <label for="works">The Works Pizza</label>
+                    <p>
+                        <button class="addMore" title="Pepperoni, julienne-cut Canadian bacon, spicy Italian sausage, fresh-cut onions, crisp green peppers, mushrooms, ripe black olives, and real cheese made from mozzarella with tomato sauce on dough.">Hover for info
+                            on Supreme Pizza</button>
+                    </p>
+                    <img src="Works.png" alt="pepperoni pizza" width="75px" height="75px">
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
             <legend>Pizza Size</legend>
             <ul>
                 <li>
@@ -230,74 +303,15 @@
             </ul>
         </fieldset>
 
-        <fieldset id="pre-made">
-            <legend>Pre-Made Pizza Types</legend>
+        <fieldset>
+            <legend>Special Instructions</legend>
             <ul>
-                <li>
-                    <input type="radio" name="type" id="cheese">
-                    <label for="cheese">Cheese Pizza</label>
-                    <p>
-                        <button class="addMore" title="Cheese and tomato sauce on dough.">Info on Cheese Pizza</button>
-                    </p>
-                </li>
-                <li>
-                    <input type="radio" name="type" id="veggie">
-                    <label for="veggie">Veggie Pizza</label>
-                    <p>
-                        <button class="addMore" title="Tomatos, mushrooms, black olives, spinach,  and basil with tomato sauce on dough.">Info on Veggie Pizza</button>
-                    </p>
-                </li>
-                <li>
-                    <input type="radio" name="type" id="pepperoni">
-                    <label for="pepperoni">Pepperoni Pizza</label>
-                    <p>
-                        <button class="addMore" title="Pepperoni and tomato sauce on dough.">Info on Pepperoni Pizza</button>
-                    </p>
-                </li>
-                <li>
-                    <input type="radio" name="type" id="meat">
-                    <label for="meat">Meat Lovers</label>
-                    <p>
-                        <button class="addMore" title="Pepperoni, beef, and sausage with tomato sauce on dough.">Info on Meat Lovers</button>
-                    </p>
-                </li>
-                <li>
-                    <input type="radio" name="type" id="margherita">
-                    <label for="margherita">Margherita Pizza</label>
-                    <p>
-                        <button class="addMore" title="Basil, tomatoes, and mozzarella with tomato sauce on dough.">Info on Margherita Pizza</button>
-                    </p>
-                </li>
-                <li>
-                    <input type="radio" name="type" id="bbq_chicken">
-                    <label for="bbq_chicken">Barbecue Chicken Pizza</label>
-                    <p>
-                        <button class="addMore" title="Chicken and BBQ sauce on dough.">Info on BBQ Chicken Pizza</button>
-                    </p>
-                </li>
-                <li>
-                    <input type="radio" name="type" id="hawaiian">
-                    <label for="hawaiian">Hawaiian Pizza</label>
-                    <p>
-                        <button class="addMore" title="Pineapple and ham with BBQ sauce on dough.">Info on Hawaiian Pizza</button>
-                    </p>
-                </li>
-                <li>
-                    <input type="radio" name="type" id="supreme">
-                    <label for="supreme">Supreme Pizza</label>
-                    <p>
-                        <button class="addMore" title="Pepperoni, sausage, meatballs, mushrooms, green bell peppers, and onions with tomato sauce on dough.">Info on Supreme Pizza</button>
-                    </p>
-                </li>
-                <li>
-                    <input type="radio" name="type" id="works">
-                    <label for="works">The Works Pizza</label>
-                    <p>
-                        <button class="addMore" title="Pepperoni, julienne-cut Canadian bacon, spicy Italian sausage, fresh-cut onions, crisp green peppers, mushrooms, ripe black olives, and real cheese made from mozzarella with tomato sauce on dough.">Info
-                            on Supreme Pizza</button>
-                    </p>
-                </li>
+                <label for="inst">Special Instructions:</label>
             </ul>
+            <textarea name="special" id="inst" cols="30" rows="10"></textarea> 
+            <br>
+            <input type="reset" value="Reset">
+            <button type="submit">Submit</button>
         </fieldset>
     </form>
 </body>

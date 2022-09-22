@@ -1,9 +1,11 @@
 function custom(){
-    document.getElementByID("custom").disabled=false;
-    document.getElementByID("pre-made").disabled=true;
+    document.getElementById("custom").disabled = false;
+    document.getElementById("custom2").disabled = false;
+    document.getElementById("pre-made").disabled = true;
 }
 
-function preMade(){
-    document.getElementByID("pre-made").diabled=false;
-    document.getElementByID("custom").disabled=true;
+function pre(){
+    document.getElementById("pre-made").disabled = false;
+    document.getElementById("custom").disabled = true;
+    document.getElementById("custom2").disabled = true;
 }
