@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+</head>
+<body>
+    <script src="./index.js"></script>
+    <center>
+        <h1>Bio Petty Pizza</h1>
+    </center>
+    <form>
+        <fieldset>
+            <legend>User Information</legend>
+            <ul>
+                <li>
+                    <label for="name">User Name</label>
+                    <input type="text" name="user" id="name" placeholder="name">
+                </li>
+                <li>
+                    <label for="pass">Password</label>
+                    <input type="text" name="user" id="pass" placeholder="password">
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>What drink do you want?</legend>
+            <ul>
+                <li>
+                    <input type="radio" id="water" name="drink">
+                    <label for="water">Water</label>
+                </li>
+                <li>
+                    <input type="radio" id="coke" name="drink">
+                    <label for="coke">Coke</label>
+                </li>
+                <li>
+                    <input type="radio" id="diet_coke" name="drink">
+                    <label for="diet_coke">Diet Coke</label>
+                </li>
+                <li>
+                    <input type="radio" id="pepsi" name="drink">
+                    <label for="pepsi">Pepsi</label>
+                </li>
+                <li>
+                    <input type="radio" id="diet_pepsi" name="drink">
+                    <label for="diet_pepsi">Diet Pepsi</label>
+                </li>
+                <li>
+                    <input type="radio" id="sprite" name="drink">
+                    <label for="sprite">Sprite</label>
+                </li>
+                <li>
+                    <input type="radio" id="sprite_cranberry" name="drink">
+                    <label for="sprite_cranberry">Sprite Cranberry</label>
+                </li>
+                <li>
+                    <input type="radio" id="sweet_tea" name="drink">
+                    <label for="sweet_tea">Sweet Tea</label>
+                </li>
+                <li>
+                    <input type="radio" id="unsweetened_tea" name="drink">
+                    <label for="unsweetened_tea">Unsweetened Tea</label>
+                </li>
+                <li>
+                    <input type="radio" id="strawberry_milkshake" name="drink">
+                    <label for="strawberry_milkshake">Strawberry Milkshake</label>
+                </li>
+                <li>
+                    <input type="radio" id="chocolate_milkshake" name="drink">
+                    <label for="chocolate_milkshake">Chocolate Milkshake</label>
+                </li>
+                <li>
+                    <input type="radio" id="vanilla_milkshake" name="drink">
+                    <label for="vanilla_milkshake">Vanilla Milkshake</label>
+                </li>
+                <li>
+                    <input type="radio" id="oreo_milkshake" name="drink">
+                    <label for="oreo_milkshake">Oreo Milkshake</label>
+                </li>
+                <li>
+                    <input type="radio" id="apple_juice" name="drink">
+                    <label for="apple_juice">Apple Juice</label>
+                </li>
+                <li>
+                    <input type="radio" id="orange_juice" name="drink">
+                    <label for="orange_juice">Orange Juice</label>
+                </li>
+                <li>
+                    <input type="radio" id="pineapple_juice" name="drink">
+                    <label for="pineapple_juice">Pineapple Juice</label>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>Pizza Creation</legend>
+            <ul>
+                <li>
+                    <p>Do you want a custom pizza or a pre-made pizza type?</p>
+                </li>
+            </ul>
+            <button type="button" onclick=custom()>Custom</button>
+            <button type="button" conclick=preMade()>Pre-Made</button>
+        </fieldset>
+
+        <fieldset id="custom" disabled="true">
+            <legend>Pizza Toppings</legend>
+            <ul>
+                <li>
+                    <input type="checkbox" name="pizza" id="cheese">
+                    <label for="cheese">Cheese</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="pizza" id="mozzarella">
+                    <label for="mozzarella">Mozzarella</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="pizza" id="pepperoni">
+                    <label for="pepperoni">Pepperoni</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="pizza" id="chicken">
+                    <label for="chicken">Chicken</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="pizza" id="sausage">
+                    <label for="sausage">Sausages</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="pizza" id="pineapple">
+                    <label for="pineapple">Pineapples</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="pizza" id="black_olive">
+                    <label for="black_olive">Black Olives</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="pizza" id="onions">
+                    <label for="onions">Onions</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="pizza" id="red_onions">
+                    <label for="red_onions">Red Onions</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="pizza" id="caramelized_onions">
+                    <label for="caramelized_onions">Caramelized Onions</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="pizza" id="tomato">
+                    <label for="tomato">Tomatoes</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="pizza" id="mushrooms">
+                    <label for="mushrooms">Mushrooms</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="pizza" id="basil">
+                    <label for="basil">Basil</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="pizza" id="spinach">
+                    <label for="spinach">Spinach</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="pizza" id="artichoke">
+                    <label for="artichoke">Artichoke</label>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset id="custom" disabled="true">
+            <legend>Type of Sause</legend>
+            <ul>
+                <li>
+                    <input type="radio" id="tomatoe" name="sauce">
+                    <label for="tomato">Tomato Sauce</label>
+                </li>
+                <li>
+                    <input type="radio" id="basil" name="sauce">
+                    <label for="basil">Basil Pesto</label>
+                </li>
+                <li>
+                    <input type="radio" id="alfredo" name="sauce">
+                    <label for="alfredo">Alfredo Sauce</label>
+                </li>
+                <li>
+                    <input type="radio" id="bbq" name="sauce">
+                    <label for="bbq">Barbecue Sauce</label>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset id="custom" disabled="true">
+            <legend>Pizza Size</legend>
+            <ul>
+                <li>
+                    <input type="radio" id="personal" name="size">
+                    <label for="personal">Personal (size: 10" slices: 4)</label>
+                </li>
+                <li>
+                    <input type="radio" id="small" name="size">
+                    <label for="small">Small (size: 12" slices: 6)</label>
+                </li>
+                <li>
+                    <input type="radio" id="medium" name="size">
+                    <label for="medium">Medium (size: 14" slices: 8)</label>
+                </li>
+                <li>
+                    <input type="radio" id="large " name="size">
+                    <label for="large">Large (size: 16" slices: 10)</label>
+                </li>
+                <li>
+                    <input type="radio" id="x_large" name="size">
+                    <label for="x_large">Extra Large (size: 18" slices: 12)</label>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset id="pre-made" disabled="true">
+            <legend>Pre-Made Pizza Types</legend>
+            <ul>
+                <li>
+                    <input type="radio" name="type" id="cheese">
+                    <label for="cheese">Cheese Pizza</label>
+                    <p>
+                        Click here for more information
+                        <a href=""></a>
+                    </p>
+                </li>
+                <li>
+                    <input type="radio" name="type" id="veggie">
+                    <label for="veggie">Veggie Pizza</label>
+                    <p>
+                        Click here for more information
+                        <a href=""></a>
+                    </p>
+                </li>
+                <li>
+                    <input type="radio" name="type" id="pepperoni">
+                    <label for="pepperoni">Pepperoni Pizza</label>
+                    <p>
+                        Click here for more information
+                        <a href=""></a>
+                    </p>
+                </li>
+                <li>
+                    <input type="radio" name="type" id="meat">
+                    <label for="meat">Meat Lovers</label>
+                    <p>
+                        Click here for more information
+                        <a href=""></a>
+                    </p>
+                </li>
+                <li>
+                    <input type="radio" name="type" id="margherita">
+                    <label for="margherita">Margherita Pizza</label>
+                    <p>
+                        Click here for more information
+                        <a href=""></a>
+                    </p>
+                </li>
+                <li>
+                    <input type="radio" name="type" id="bbq_chicken">
+                    <label for="bbq_chicken">Barbecue Chicken Pizza</label>
+                    <p>
+                        Click here for more information
+                        <a href=""></a>
+                    </p>
+                </li>
+                <li>
+                    <input type="radio" name="type" id="hawaiian">
+                    <label for="hawaiian">Hawaiian Pizza</label>
+                    <p>
+                        Click here for more information
+                        <a href=""></a>
+                    </p>
+                </li>
+                <li>
+                    <input type="radio" name="type" id="supreme">
+                    <label for="supreme">Supreme Pizza</label>
+                    <p>
+                        Click here for more information
+                        <a href=""></a>
+                    </p>
+                </li>
+                <li>
+                    <input type="radio" name="type" id="works">
+                    <label for="works">The Works Pizza</label>
+                    <p>
+                        Click here for more information
+                        <a href=""></a>
+                    </p>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>
